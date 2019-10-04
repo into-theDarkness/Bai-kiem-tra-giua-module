@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a  = parseInt(prompt("Enter a number"));
+    let i;
+    if (a < 2){
+        document.write("Day Khong Phai La So Nguyen to");
+    } else {
+        for ( i = 2; i < a-1; i ++){
+            if (a % i == 0){
+                document.write("Day Khong Phai La So Nguyen to");
+                break;
+            } else {
+                document.write("Day La So Nguyen to");
+            }
+        }
+    }
+</script>
+</body>
+</html>

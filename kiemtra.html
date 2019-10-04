@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>baikiemtra</title>
+</head>
+<body>
+<script>
+
+    let a = parseFloat(prompt("Nhập điểm Toán"));
+    let b = parseFloat(prompt("Nhập điểm Văn"));
+    let c = parseFloat(prompt("Nhập điểm Anh"));
+    while (a>10 || a < 0){
+        alert("Nhap lai diem Toan di anh");
+        a =parseFloat(prompt("Nhap lai diem Toan anh oi"));
+    }
+    while ( b > 10|| b <0){
+        alert("Nhap lai diem Van di anh");
+        b =parseFloat(prompt("Nhap lai diem Van anh oi"));
+    }
+    while (c>10 || b <0){
+        alert("Nhap lai diem Anh anh oi");
+        c = parseFloat(prompt("Nhap lai diem Anh anh oi"));
+    }
+    let trungbinh = (a*2 + b + c*2)/5;
+    alert("Điểm trung bình của bạn là: " + trungbinh);
+    if (trungbinh < 5 ){
+        document.write("Không Đạt");
+    } else if ( 5 <= trungbinh && trungbinh < 7.5){
+        document.write("Đạt");
+    } else if ( 7.6 <= trungbinh && trungbinh < 8.5){
+        document.write("Khá");
+    } else {
+        document.write("Tốt");
+    }
+</script>
+</body>
+</html>
